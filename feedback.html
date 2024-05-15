@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>About - Warner Bros</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="header">
+            <img alt="logo" src="img/lg.png" height="50" width="50">
+            <h1>Warner Bros Studios</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="MainMovies.html">Tv Shows</a>
+                </li>
+                <li><a href="SecondMovies.html">Movies</a></li>
+                <li>
+                    <a href="games.html">Games</a>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="feedback.html" class="active">Feedback</a>
+                </li>
+            </ul>
+        </div>
+        <br>
+
+        <div class="content">
+            <h2>Warner Bros Studios</h2>
+            <div class="about-details">
+
+                <div class="about-text">
+                    <p>Heyy, Do you want to Send us a feedback on where we can improve go ahead.</p>
+                </div>
+            </div>
+
+            <h2>Feedback</h2>
+            <form action="submit_feedback.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <footer>
+        <div class="wrapper2">
+            <ul>
+                <li>
+                    <div class="text">
+                        <h4>Navigation</h4>
+                        <div>
+                            <a href="#">About us</a>
+                            <a href="feedback.html">Contact us</a>
+                            <a href="#">Privacy</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="text">
+                        <h4>Copyright</h4>
+                        <div>
+                            © Copyright 2023 Warner Bros Studios
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="text">
+                        <h4>Assignment by</h4>
+                        <div>
+                            <p>Rorisang</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

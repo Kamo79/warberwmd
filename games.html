@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <link rel="SHORTCUT ICON" href="" />
+    <title>Warner Bros</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <style>
+        .movie-row {
+            margin: 0 10px;
+            position: relative;
+        }
+
+        .movie-row ul {
+            padding-left: 0;
+            display: flex;
+            list-style: none;
+            overflow-x: auto;
+        }
+        
+        .movie-row ul li {
+            margin-right: 10px;
+        }
+        
+        .scroll-left,
+        .scroll-right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ccc;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .scroll-left {
+            left: 0;
+        }
+        
+        .scroll-right {
+            right: 0;
+        }
+        
+        .scroll-left i,
+        .scroll-right i {
+            font-size: 20px;
+        }
+
+        /* CSS for movie details */
+        .movie-details {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #032994;
+            padding: 20px;
+            border-radius: 5px;
+            display: none;
+            z-index: 1000;
+        }
+
+        .movie-details h3 {
+            margin-bottom: 10px;
+        }
+
+        .movie-details p {
+            margin-bottom: 20px;
+        }
+
+        .close-btn {
+            color: #aaa;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Adjust the size of the image */
+        #movie-details img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px; /* Add some space between image and text */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="header">
+            <img alt="logo" src="img/lg.png" height="50" width="50">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="tvshows.html">Tv Shows</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="collections.html">Collection</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>Recently Added</h2>
+            <div id="main">
+                <div class="movie-row">
+                    <div class="scroll-left"><i class="fas fa-chevron-left"></i></div>
+                    <ul>
+                        <li>
+                            <a href="#" class="movie-link"  title="Friends"  data-title="Friends" data-description="A TV show about friends"> <img src="img/friends.jpg" alt="Avengers_">Friends</a>
+                        </li>
+                        <li>
+                            <a href="#" class="movie-link"  title="Friends"  data-title="Friends" data-description="A TV show about friends"> <img src="img/friends.jpg" alt="Avengers_">Friends</a>
+                        </li>
+                        <li>
+                            <a href="#" class="movie-link"  title="Friends"  data-title="Friends" data-description="A TV show about friends"> <img src="img/friends.jpg" alt="Avengers_">Friends</a>
+                        </li>
+                    </ul>
+                    <div class="scroll-right"><i class="fas fa-chevron-right"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Recently Added</h2>
+            <div id="main">
+                <div class="movie-row">
+                    <div class="scroll-left"><i class="fas fa-chevron-left"></i></div>
+                    <ul>
+                        <li>
+                            <a href="#" class="movie-link"  title="Friends"  data-title="Friends" data-description="A TV show about friends"> <img src="img/friends.jpg" alt="Avengers_">Friends</a>
+                        </li>
+                        <li>
+                            <a href="#" class="movie-link"  title="Friends"  data-title="Friends" data-description="A TV show about friends"> <img src="img/friends.jpg" alt="Avengers_">Friends</a>
+                        </li>
+                        <li>
+                            <a href="#" class="movie-link"  title="Friends"  data-title="Friends" data-description="A TV show about friends"> <img src="img/friends.jpg" alt="Avengers_">Friends</a>
+                        </li>
+                    </ul>
+                    <div class="scroll-right"><i class="fas fa-chevron-right"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Recently Added</h2>
+            <div id="main">
+                <div class="movie-row">
+                    <div class="scroll-left"><i class="fas fa-chevron-left"></i></div>
+                    <ul>
+                        <li>
+                            <a href="#" class="movie-link"  title="Friends"  data-title="Friends" data-description="A TV show about friends"> <img src="img/friends.jpg" alt="Avengers_">Friends</a>
+                        </li>
+                        <li>
+                            <a href="#" class="movie-link"  title="Friends"  data-title="Friends" data-description="A TV show about friends"> <img src="img/friends.jpg" alt="Avengers_">Friends</a>
+                        </li>
+                        <li>
+                            <a href="#" class="movie-link"  title="Friends"  data-title="Friends" data-description="A TV show about friends"> <img src="img/friends.jpg" alt="Avengers_">Friends</a>
+                        </li>
+                    </ul>
+                    <div class="scroll-right"><i class="fas fa-chevron-right"></i></div>
+                </div>
+            </div>
+        </div>
+
+
+        
+
+        <!-- Modal for Movie Details -->
+        <div class="movie-details">
+            <div class="close-btn">&times;</div>
+            <h3 id="movie-title"></h3>
+            <p id="movie-description"></p>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="wrapper2">
+            <ul>
+                <li>
+                    <div class="text">
+                        <h4>Navigation</h4>
+                        <div>
+                            <a href="#">About us</a>
+                            <a href="feedback.html">Contact us</a>
+                            <a href="#">Privacy</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="text">
+                        <h4>Copyright</h4>
+                        <div>
+                            © Copyright 2024 Warner Bros Studios
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // Get all movie links
+        const movieLinks = document.querySelectorAll('.movie-link');
+
+        // Get the modal
+        const modal = document.querySelector('.movie-details');
+
+        // Get the close button
+        const closeBtn = document.querySelector('.close-btn');
+
+        // Loop through each movie link and add click event listener
+        movieLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default link behavior
+
+                // Get movie details from data attributes
+                const movieTitle = this.dataset.title;
+                const movieDescription = this.dataset.description;
+
+                // Set movie details in the modal
+                document.getElementById('movie-title').textContent = movieTitle;
+                document.getElementById('movie-description').textContent = movieDescription;
+
+                // Show the modal
+                modal.style.display = 'block';
+            });
+        });
+
+        // Close the modal when the user clicks on the close button
+        closeBtn.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+    </script>
+
+</body>
+
+</html>
